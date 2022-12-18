@@ -27,15 +27,62 @@ export default function App() {
               and climate action.
             </p>
           </div>
-          <div className="flex w-full mt-6 justify-center">
-            <div className="rounded-md shadow">
-              <iframe
-                src="https://zenaacademy.substack.com/embed"
-                width="680"
-                height="320"
-                style={{ border: "1px solid #EEE", background: "white" }}
-                scrolling="no"
-              ></iframe>
+          <div className="bg-white">
+            <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+              <div className="rounded-3xl bg-[#385738] py-10 px-6 sm:py-16 sm:px-12 lg:flex lg:items-center lg:p-20">
+                <div className="lg:w-0 lg:flex-1">
+                  <h2 className="text-3xl font-bold tracking-tight text-white">
+                    Stay tuned for our early-access!
+                  </h2>
+                  <p className="mt-4 max-w-3xl text-lg text-indigo-100">
+                    We're working hard on ZENA's infrastructure and UI. Keep
+                    yourself updated on latest news!
+                  </p>
+                </div>
+                <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
+                  <form
+                    className="sm:flex"
+                    // style="border:1px solid #ccc;padding:3px;text-align:center;"
+                    action="https://tinyletter.com/zenaacademy"
+                    method="post"
+                    target="popupwindow"
+                    onSubmit={() => {
+                      window.open(
+                        "https://tinyletter.com/zenaacademy",
+                        "popupwindow",
+                        "scrollbars=yes,width=800,height=600"
+                      );
+                      return true;
+                    }}
+                  >
+                    <label htmlFor="email-address" className="sr-only">
+                      Email address
+                    </label>
+                    <input
+                      name="email"
+                      id="tlemail"
+                      type="email"
+                      autoComplete="email"
+                      required
+                      className="w-full rounded-md border-white px-5 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700"
+                      placeholder="Enter your email"
+                    />
+                    <button
+                      type="submit"
+                      className="mt-3 flex w-full items-center justify-center rounded-md border border-transparent bg-[#e0037a] px-5 py-3 text-base font-medium text-white hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-700 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
+                    >
+                      Subscribe
+                    </button>
+                  </form>
+                  <p className="mt-3 text-sm text-indigo-100">
+                    No spam, no bullshit, promised!
+                    {/* We care about the protection of your data. Read our{" "}
+                    <a href="#" className="font-medium text-white underline">
+                      Privacy Policy.
+                    </a> */}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div>

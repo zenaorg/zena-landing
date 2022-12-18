@@ -13,7 +13,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.subscribe-widget form.form .sideBySideWrap button.rightButton {
-  background: black !important;
-}
