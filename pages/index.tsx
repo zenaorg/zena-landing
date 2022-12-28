@@ -10,7 +10,7 @@ export default function App() {
     <div className="relative bg-white h-screen">
       <Nav />
 
-      <section className="relative w-full h-screen overflow-hidden bg-center bg-no-repeat bg-cover bg-patternTop">
+      <section className="relative w-full h-fit overflow-hidden bg-center bg-no-repeat bg-cover bg-patternTop">
         <div className="container relative w-full px-8 pt-32 pb-24 mx-auto lg:px-4">
           <div className="flex flex-col w-full mb-12 text-left lg:text-center">
             <strong className="text-lg font-semibold text-decoration-line: line-through tracking-widest uppercase text-slate-500">
@@ -87,8 +87,8 @@ export default function App() {
           </div>
           <div>
             <img
-              className="pt-20 h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-              src="/zena_1.png"
+              className="pt-20 w-full object-cover h-full w-full"
+              src="/zena_3.png"
               alt=""
             />
           </div>
@@ -156,8 +156,12 @@ export default function App() {
                   Earn CO2 backed tokens
                 </h3>
                 <p className="mt-6 text-lg text-slate-500">
-                  Thanks to Toucan Protocol, ZENA catches real carbon for every
-                  successfully mastered chapter. Let your ZENA tree grow!
+                  Thanks to{" "}
+                  <a href="https://toucan.earth/" target={"_blank"}>
+                    Toucan Protocol
+                  </a>
+                  , ZENA catches real carbon for every successfully mastered
+                  chapter. Let your ZENA tree grow!
                 </p>
               </div>
             </div>
@@ -205,7 +209,7 @@ export default function App() {
           <div className="flex flex-col w-full mb-6 text-left lg:text-center">
             <h2 className="mb-6 font-serif text-3xl font-bold tracking-tighter text-[#385738] md:text-8xl lg:text-6xl">
               Connecting Web3 with climate resilience is more than just
-              futuristic technology it is also about how young people can find
+              futuristic technology - it is also about how young people can find
               their place in the world. That’s what ZENA is aiming for. Have fun
               and change the world with us while learning!
             </h2>
